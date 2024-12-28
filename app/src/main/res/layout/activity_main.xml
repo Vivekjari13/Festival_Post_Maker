@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mainHomePage"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#d36ca6"
+        android:fitsSystemWindows="true"
+        >
+        <TextView
+            android:id="@+id/titleName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Festival Post Maker"
+            android:textSize="22sp"
+            android:textColor="@color/black"
+            android:layout_gravity="center"
+            android:letterSpacing=".3"
+            android:textStyle="bold"/>
+    </Toolbar>
+
+    <FrameLayout
+        android:id="@+id/searchBar"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_below="@id/toolbar"
+        android:layout_marginTop="15dp"
+        android:layout_marginHorizontal="10dp"
+        android:layout_gravity="center"
+        >
+
+        <LinearLayout
+            android:id="@+id/search"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:orientation="horizontal"
+            >
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_gravity="center"
+                android:layout_marginHorizontal="20dp"
+                android:src="@drawable/search1"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginEnd="15dp"
+                android:hint="Search"/>
+
+        </LinearLayout>
+
+    </FrameLayout>
+
+    <TextView
+        android:id="@+id/upcomingFestival"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Upcoming Festival"
+        android:layout_below="@id/searchBar"
+        android:textSize="22sp"
+        android:layout_marginHorizontal="15dp"
+        android:layout_marginTop="15dp"
+        android:textColor="@color/black"/>
+
+
+    <HorizontalScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="20dp"
+        android:layout_below="@id/upcomingFestival"
+        android:layout_marginTop="15dp">
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center">
+
+            <LinearLayout
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_margin="8dp"
+                android:id="@+id/festival1"
+                android:orientation="horizontal"
+                android:background="@drawable/img1"/>
+            <LinearLayout
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_margin="8dp"
+                android:id="@+id/festival2"
+                android:orientation="horizontal"
+                android:background="@drawable/img2"/>
+            <LinearLayout
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_margin="8dp"
+                android:id="@+id/festival3"
+                android:orientation="horizontal"
+                android:background="@drawable/img3"/>
+            <LinearLayout
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_margin="8dp"
+                android:id="@+id/festival4"
+                android:orientation="horizontal"
+                android:background="@drawable/img4"/>
+
+        </LinearLayout>
+
+    </HorizontalScrollView>
+
+    <TextView
+        android:id="@+id/upcomingDays"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Upcoming Holiday"
+        android:layout_below="@id/scrollView1"
+        android:textSize="22sp"
+        android:layout_marginHorizontal="15dp"
+        android:layout_marginTop="15dp"
+        android:textColor="@color/black"/>
+
+
+    <HorizontalScrollView
+        android:id="@+id/scrollView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="20dp"
+        android:layout_below="@id/upcomingDays"
+        android:layout_marginTop="15dp">
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center">
+
+            <LinearLayout
+                android:layout_width="150dp"
+                android:layout_height="100dp"
+                android:layout_margin="8dp"
+                android:id="@+id/day1"
+                android:orientation="horizontal"
+                android:background="@drawable/day1"/>
+            <LinearLayout
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_margin="8dp"
+                android:id="@+id/day2"
+                android:orientation="horizontal"
+                android:background="@drawable/day4"/>
+            <LinearLayout
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_margin="8dp"
+                android:id="@+id/day3"
+                android:orientation="horizontal"
+                android:background="@drawable/day3"/>
+            <LinearLayout
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_margin="8dp"
+                android:id="@+id/day4"
+                android:orientation="horizontal"
+                android:background="@drawable/day5"/>
+
+        </LinearLayout>
+
+    </HorizontalScrollView>
+
+    <TextView
+        android:id="@+id/general"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="General Quotes"
+        android:layout_below="@id/scrollView2"
+        android:textSize="22sp"
+        android:layout_marginHorizontal="15dp"
+        android:layout_marginTop="15dp"
+        android:textColor="@color/black"/>
+    <HorizontalScrollView
+        android:id="@+id/scrollView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="20dp"
+        android:layout_below="@id/general"
+        android:layout_marginTop="15dp">
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center">
+
+            <LinearLayout
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_margin="8dp"
+                android:id="@+id/pic1"
+                android:orientation="horizontal"
+                android:background="@drawable/pic1"/>
+            <LinearLayout
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_margin="8dp"
+                android:id="@+id/pic2"
+                android:orientation="horizontal"
+                android:background="@drawable/pic2"/>
+            <LinearLayout
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_margin="8dp"
+                android:id="@+id/pic3"
+                android:orientation="horizontal"
+                android:background="@drawable/pic3"/>
+            <LinearLayout
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_margin="8dp"
+                android:id="@+id/pic4"
+                android:orientation="horizontal"
+                android:background="@drawable/pic4"/>
+
+        </LinearLayout>
+
+    </HorizontalScrollView>
+
+</RelativeLayout>

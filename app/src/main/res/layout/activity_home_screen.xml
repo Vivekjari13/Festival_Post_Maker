@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HomeScreen">
+
+        <Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#d36ca6"
+            android:fitsSystemWindows="true">
+            <TextView
+                android:id="@+id/titleName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Festival Post Maker"
+                android:textSize="22sp"
+                android:textColor="@color/black"
+                android:layout_gravity="center"
+                android:letterSpacing=".2"
+                android:textStyle="bold"/>
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="50dp"
+                android:contentDescription="@string/todo5"
+                android:src="@drawable/back"/>
+        </Toolbar>
+
+    <LinearLayout
+        android:layout_width="400dp"
+        android:layout_height="300dp"
+        android:layout_margin="8dp"
+        android:id="@+id/festival1"
+        android:layout_below="@id/toolbar"
+        android:orientation="horizontal"
+        android:background="@drawable/img1"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@id/festival1">
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/share1"
+            android:layout_marginStart="15dp"
+            />
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/download"
+            android:layout_marginStart="285dp"
+            />
+
+
+
+
+
+
+
+    </LinearLayout>
+
+
+</RelativeLayout>
